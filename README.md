@@ -5,8 +5,8 @@ About the content I expect keep it constantly updated with the different project
 
 ## TODO
 
-- [] Get to upload any image
-- [] Fork a folio the, most likely [this](https://github.com/alshedivat/al-folio) is gonna be the chosen one
+- [ ] Get to upload any image  
+- [X] Fork a folio the, most likely [this](https://github.com/alshedivat/al-folio) is gonna be the chosen one
 
 
 

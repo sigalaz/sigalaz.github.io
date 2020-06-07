@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: random
-description: Lorem Ipsum
+description: Lorem Ipsum. Don't know exactly what I'll put in here. Maybe random blogs about personal interests?
 ---
 
 <!---

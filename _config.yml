@@ -10,7 +10,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: #/al-folio # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
@@ -36,7 +36,7 @@ research_gate_profile: Sebastian_Galaz2 # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  I'm specially active on linkedin and email in case you want to contact me
+  I'm specially active on my email and LinkedIn in case you want to contact me
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 

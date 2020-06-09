@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: learning
 description: This section is to keep track of all the courses that I'll be taking from now on. I've found specially useful to write about some new topic that a I'm learning and sometimes 'not learning'  or not totally getting the concept.  
 
 ---

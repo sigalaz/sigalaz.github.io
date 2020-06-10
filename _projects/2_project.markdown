@@ -4,7 +4,11 @@ title: OAM modes classification
 description: 
 img: /assets/img/2.jpg
 ---
+<h3>[Under Construction]</h3>
+I'll put a pytorch implementation from the conference paper in where I participated. 
+I will upload the code and results but on the meantime you can check the paper <a href="https://www.researchgate.net/publication/335668623_Deep_learning_for_image-based_classification_of_OAM_modes_in_laser_beams_propagating_through_convective_turbulence" target="_blank">here</a>
 
+<!---
 Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
@@ -53,3 +57,4 @@ The code is simple. Just add a col class to your image, and another class specif
     <img class="col two left" src="/img/6.jpg"/>
     <img class="col one left" src="/img/11.jpg"/>
 </div>
+--->

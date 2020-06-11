@@ -2,7 +2,7 @@
 layout: page
 title: OAM modes classification
 description: 
-img: /assets/img/2.jpg
+img: /assets/img/oam_project/cover.jpg
 ---
 <h3>[Under Construction]</h3>
 I'll put a pytorch implementation from the conference paper in where I participated. 

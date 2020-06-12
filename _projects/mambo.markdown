@@ -1,9 +1,11 @@
 ---
 layout: page
 title: MamboLanding
-description: A self-landing UAV people detector.  
+description: A self-landing UAV people detector.
 img: /assets/img/cover-project1.jpg
 ---
+<b>Authors:</b> S. Galaz, C. Funck, M. Diaz  
+<b>[Post still under construction]</b>
 
 Almost every drone autonomous navigation system is today highly dpenedent from a gps system that allows to have some kind of reference point so it can have some notion auto-localization. Nevertheless, depending of this kind of sensors can be many times highly unaccurate, specially for tasks like landing on a specific point without prior map knoledge.  
 In this project we proposed a navigation system for a low cost drone that only requires a front monocular camera and with that, is able to detect, aproach and land in front a person.

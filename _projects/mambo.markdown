@@ -73,7 +73,7 @@ With the combination of the SSD plus mobilenet, we reached an inference time of 
 
 
 <div class="col three caption">
-    Capture from a navigation test drive on third and first person perspective. Check the full video <a href="https://www.youtube.com/watch?list=PL5PIk24t1cVYq7BGWIc3eMJ8nIkloUO0Y&v=sV9nGOG_bL0&feature=emb_title" target="_blank">here</a>
+    Capture from a navigation test drive on third and first person perspective. Check the full video <a href="https://www.youtube.com/watch?v=sV9nGOG_bL0" target="_blank">here</a>
 </div>
 
 <h3>Metrics</h3>

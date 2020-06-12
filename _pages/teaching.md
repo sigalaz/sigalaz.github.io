@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: learning
-description: This section is to keep track of all the courses that I'll be taking from now on. I've found specially useful to write about some new topic that a I'm learning and sometimes 'not learning'  or not totally getting the concept.  
+description: This section is to keep track of all the courses that I'll be taking from now on. I've found specially useful to write about some new topic that a I'm learning and sometimes 'not learning'  or not totally getting the concept so that when I come back I can remember where was  
 
 ---
 
@@ -11,6 +11,7 @@ For now, this page is assumed to be a static description of your courses. You ca
 
 Organize your courses by years, topics, or universities, however you like!
 --->
+<!---
 
 The format is pretty standard for all the courses, or at least what I've found to be most effective for me, a course divided in 18 weeks with a dedication of 15 hours/week
 - Schedule:
@@ -26,6 +27,8 @@ The format is pretty standard for all the courses, or at least what I've found t
 - Homeworks: 1 per month. An aplied problem that puts together all 
 
 - Final Project: 1 per course. It's very possible that I mix it with 
+
+--->
 
 {% for project in site.project %}
 

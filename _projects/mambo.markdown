@@ -77,7 +77,7 @@ With the combination of the SSD plus mobilenet, we reached an inference time of 
 </div>
 
 <h3>Metrics</h3>
-After the course final project, we took the drone to the <a href="https://www.uandes.cl/carrera/kinesiologia/investigacion/" target="_blank">biomechanics lab (LIBFE)</a> to measure how well the trayectory behave under more difficult circunstances like occluded person goal or a dinamic kind of goal and we found that in the occluded case the system is still capable of landing near the goal, although it did missed in some parts of the simulations, wich is why we coul see in the fist 2 images some weird trayectories.
+After the course final project, we took the drone to the <a href="https://www.uandes.cl/carrera/kinesiologia/investigacion/" target="_blank">biomechanics lab (LIBFE)</a> to measure how well the trayectory behave under more difficult circunstances like occluded target or a dinamic kind of goal in where the target was moving. We found that in the occluded case the system is still capable of landing near the target, although it did missed the person in some parts of the simulations, wich is why we could see in the fist 2 images some non-optimal trayectories.
 In the dynamic case, as it can be seen from the third image, the system doesn't respond well when the target is moving.
 
 <div class="img_row">

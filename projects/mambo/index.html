@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Sebastian Galaz | MamboLanding</title>
+  <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+  
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/projects/mambo/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Sebastian</strong> Galaz
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">blog</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/projects/">projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">learning</a>
+          
+        
+          
+        
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">MamboLanding</h1>
+    <h5 class="post-description">A self-landing UAV people detector.</h5>
+  </header>
+
+  <article class="post-content MamboLanding clearfix">
+    <p><b>Authors:</b> S. Galaz, C. Funck, M. Diaz<br />
+<b>[Post still under construction]</b></p>
+
+<p>Almost every drone autonomous navigation system is today highly dpenedent from a gps system that allows to have some kind of reference point so it can have some notion auto-localization. Nevertheless, depending of this kind of sensors can be many times highly unaccurate, specially for tasks like landing on a specific point without prior map knoledge.<br />
+In this project we proposed a navigation system for a low cost drone that only requires a front monocular camera and with that, is able to detect, aproach and land in front a person.
+To this end we implement a Single Shot Detector (SSD) algorithm and a trained Mobilenet CNN for vision task, and the posterior navigation algorithm based on this detections.</p>
+
+<!---
+    ---
+    layout: page
+    title: Project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
+--->
+
+<div class="img_row">
+    <img class="col one left" src="/assets/img/cover-project1.jpg" alt="" title="cover image" />
+    <!---<img class="col one left" src="/assets/img/2.jpg" alt="" title="example image"/>--->
+    <img class="col two left" src="/assets/img/mambo.jpg" alt="" title="example image" />
+</div>
+<div class="col three caption">
+    Pictures of parrot mambo drone.  
+</div>
+
+<h3>Vision </h3>
+
+<p>A cool thing about mobilenet is that the architecture tries to preserve the main advantage of resnets by putting a residual block allowing to avoid vanishing or exploding gradient during training, and at the same time uses only 1x1 convololutions the beginning and at the end of each 3x3 kind of layer, witch  considerably reduces the number of channels and therefore, the number of parameters and inference time.
+The model was trained on CIFAR-10, so the network has a 20 class output.</p>
+
+<div class="img-row">
+    <img class="col four" src="/assets/img/mobilenet.jpg" alt="" title="example image" />
+    <!---<img class="col one left" src="/assets/img/11.jpg" alt="" title="example image"/>--->
+</div>
+<div class="col three caption">
+    Mobilennet arquitecture
+</div>
+
+<p>Once we had built the mobilenet, the following step is use it to build the SSD, witch will have an output of 24 channels, 20 for the number of clases plus the boundary box (cx, cy, w, h).<br />
+With the combination of the SSD plus mobilenet, we reached an inference time of 4 miliseconds per image.</p>
+
+<h3>Navigation: 4 defined states </h3>
+
+<h4>1. Searching</h4>
+
+<h4>2. Aligning</h4>
+
+<h4>3. Moving  </h4>
+
+<h4>4. Landing</h4>
+
+<div class="img_row">
+    <img class="col three left" src="/assets/img/secuencia.jpg" alt="" title="example image" />
+</div>
+
+<div class="col three caption">
+    Visualization of the 4 states of navigation
+</div>
+
+<p><br /><br /></p>
+
+<div class="img_row">
+    <img class="col three left" src="/assets/img/Selection.jpg" alt="" title="example image" />
+</div>
+
+<div class="col three caption">
+    Capture from a navigation test drive on third and first person perspective. Check the full video <a href="https://www.youtube.com/watch?v=sV9nGOG_bL0" target="_blank">here</a>
+</div>
+
+<h3>Metrics</h3>
+<p>After the course final project, we took the drone to the <a href="https://www.uandes.cl/carrera/kinesiologia/investigacion/" target="_blank">biomechanics lab (LIBFE)</a> to measure how well the trayectory behave under more difficult circunstances like occluded target or a dinamic kind of goal in where the target was moving. We found that in the occluded case the system is still capable of landing near the target, although it did missed the person in some parts of the simulations, wich is why we could see in the fist 2 images some non-optimal trayectories.
+In the dynamic case, as it can be seen from the third image, the system doesn’t respond well when the target is moving.</p>
+
+<div class="img_row">
+    <img class="col one left" src="/assets/img/target.jpg" alt="" title="cover image" />
+    <!---<img class="col one left" src="/assets/img/2.jpg" alt="" title="example image"/>--->
+    <img class="col two left" src="/assets/img/mambo.jpg" alt="" title="example image" />
+</div>
+<div class="col three caption">
+    Mambo and target  
+</div>
+
+<div class="img_row">
+    <img class="col one left" src="/assets/img/estatico_a.jpg" alt="" title="cover image" />
+    <img class="col one left" src="/assets/img/estatico_c.jpg" alt="" title="example image" />
+    <img class="col one left" src="/assets/img/dinamico.jpg" alt="" title="example image" />
+</div>
+<div class="col three caption">
+    Trajectories. The firs 2 were simulated with ocluded target and the third was a simulation with dynamic target. 
+</div>
+
+<p><a href="https://github.com/sigalaz/Drone-Autonomous-Landing">source code</a></p>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2020 Sebastian Galaz.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXXX', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  </body>
+
+</html>
